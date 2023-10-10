@@ -1,3 +1,7 @@
+*{
+  /* background-color: #333333; */
+
+}
 body {
   margin: 0;
   font-family: Arial;
@@ -18,6 +22,8 @@ body {
 .main {
   flex: 3;
   padding: 20px;
+  background-color: #222222;
+  color: azure;
 }
 
 /* Sidebar */
@@ -32,27 +38,38 @@ body {
 }
 
 /* Main */
+
 #quotes {
   border-collapse: collapse;
   width: 100%;
   margin-top: 20px;
+  color: azure;
   cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+table {
+-webkit-clip-path: inset(0 round 10px);
+  clip-path: inset(0 round 10px); 
 }
 
 #quotes td,
 #quotes th {
   padding: 12px 15px;
-  border: 1px solid #ddd;
+  border: 1px solid #999;
 }
 
 #quotes thead {
   background: #3f51b5;
   color: #fff;
 }
-
+/* 
 #quotes tbody tr:nth-child(even) {
-  background: #f3f3f3;
-}
+  background: #E6E6FA;
+  color: #020202;
+} */
+
 .navbar {
   position: sticky;
   display: flexbox;
