@@ -21,7 +21,6 @@ h1 {
     transition: background 0.5s, border-color 0.5s;
     box-sizing: border-box;
 }
-}
 
 #crmForm:hover {
     background-color: #45a0491a;
