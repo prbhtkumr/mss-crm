@@ -6,7 +6,7 @@ app = Flask(__name__)
 # Route to serve the HTML dashboard file
 @app.route('/')
 def index():
-    return render_template('dashboard.html')
+    return render_template('deprecated_dashboard.html')
 
 # Database connection
 DATABASE_FILE = 'database.db'
