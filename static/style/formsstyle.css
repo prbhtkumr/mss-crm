@@ -13,7 +13,7 @@ h1 {
 #crmForm {
     max-width: 400px;
     margin: 0 auto;
-    background-color: #3f51b5;
+    background-color: #45a0491a;
     color: #ffee00;
     padding: 20px;
     border-radius: 5px;
@@ -23,7 +23,7 @@ h1 {
 }
 
 #crmForm:hover {
-    background-color: #45a0491a;
+    background-color: #3f51b5;
     border-color: rgba(255, 238, 0, 0.8);
 }
 
