@@ -20,7 +20,7 @@ def index():
     users = cursor.fetchall()
     connection.close()
     return render_template('dashboard.html', users=users)
-@app.route('/form')
+@app.route('/forms')
 def show_form():
     return render_template('form.html')
 
