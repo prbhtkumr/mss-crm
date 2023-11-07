@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('deprecated_dashboard.html')
+    return render_template('dashboard.html')
 
 DATABASE_FILE = 'database.db'
 

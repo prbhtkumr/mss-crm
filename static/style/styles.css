@@ -46,7 +46,6 @@ body {
 }
 
 table {
--webkit-clip-path: inset(0 round 10px);
   clip-path: inset(0 round 10px); 
 }
 
@@ -63,11 +62,12 @@ table {
 
 .navbar {
   position: sticky;
-  display: flexbox;
   top: 0;
   background-color: #333333;
   color: #fff;
   padding: 10px 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-container {
@@ -79,25 +79,40 @@ table {
   padding: 0 20px;
 }
 
-.nav-link {
-  color: #cabe13;
-  text-decoration: none; 
-  padding: 10px 15px; 
-  transition: color 0.3s ease; 
-  font-weight: bold; 
+.logo {
+  display: flex;
+  align-items: center;
 }
 
-.nav-link:hover {
-  color: #ff6600;
+.logo-img {
+  width: 50px;
+  height: auto;
+  margin-right: 10px; 
 }
-
 
 .logo a {
   color: #fff;
-  justify-content: start;
   text-decoration: none;
-  font-size: 3.5rem;
+  font-size: 1.5rem;
   font-weight: bold;
+}
+
+.nav-link {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link > a {
+  color: #ffcc00;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.nav-link > a:hover {
+  color: #ff6600;
 }
 
 .search-container {
@@ -123,9 +138,4 @@ table {
 
 .search-container button:hover {
   background-color: #45a049;
-}
-
-.logo-img {
-  width: 50px;
-  height: auto;
 }
